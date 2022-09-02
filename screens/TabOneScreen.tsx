@@ -7,7 +7,9 @@ import { RootTabScreenProps } from '../types';
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={styles.title}>Pestaña 1</Text>
+      {/* Si quiere agregar imagenes o videos o cosas por el estilo se importan desde la carpeta assets aqui existe un orden  */}
+      {/*  La vista se adapta al tamaño de la ventana y al estilo dark o light (Oscuro o claro dependiendo la configuracion del portatil o celular) */}
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
